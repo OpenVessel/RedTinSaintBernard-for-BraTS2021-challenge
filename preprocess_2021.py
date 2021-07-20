@@ -9,16 +9,24 @@ path_to_BraTS2021 = "E:\Datasets\BraTS challenge\RSNA_ASNR_MICCAI_BraTS2021_Trai
 ## What is t2?
 
 ## So we need to unzip the data points 
-from utils import unzip_all_files_folder_2, nii_to_numpy
-
+from utils import unzip_all_files_folder_2, convert_nii_to_png
 ## function works for a single folder we can for loop all folders
 # unzip_all_files_folder_2(path_to_single)
-
+convert_nii_to_png(path_to_single)
 ## read in the nitfi files into numpy arrays 
+
+import numpy as np
+import nibabel as nib
+import itk
+# Packages 
+# itkwidgets
+# nibabel 
+# img = nib.load(example_filename)
+# a = np.array(img.dataobj)
+
 
 
 ## visualize the data somehow
-
 
 ## Training set and the test set
 
