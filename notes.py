@@ -35,7 +35,7 @@ for file in os.listdir(file_path):
     
     
     file_array = os.path.join(file_path, file)
-    if os.path.isfile(file_array) and file == "00000534_brain_t2.nii":
+    if os.path.isfile(file_array):
         file_array = nibabel.load(file_array).get_fdata()
 
         print("Loading ", file)
